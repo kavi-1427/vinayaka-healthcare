@@ -26,10 +26,7 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 py-4">
         <a href="#top" className="flex items-center gap-2.5">
-          <span className="w-9 h-9 rounded-full bg-pine flex items-center justify-center">
-            <span className="font-display text-white text-lg font-semibold">V</span>
-          </span>
-          <span className="font-display font-semibold text-pine-dark text-lg leading-tight tracking-tight">
+          <span className="font-display text-pine-dark text-xl font-semibold tracking-tight">
             Vinayaka Healthcare
           </span>
         </a>

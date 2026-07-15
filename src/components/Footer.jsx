@@ -8,9 +8,6 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-5 sm:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <div className="flex items-center gap-2.5 mb-4">
-            <span className="w-9 h-9 rounded-full bg-marigold flex items-center justify-center">
-              <span className="font-display text-pine-dark text-lg font-semibold">V</span>
-            </span>
             <span className="font-display font-semibold text-ivory text-lg">Vinayaka Healthcare</span>
           </div>
           <p className="text-sm leading-relaxed max-w-xs">
