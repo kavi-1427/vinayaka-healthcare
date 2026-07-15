@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-ivory: #FFF9F2;
+  --color-ivory-dim: #F0E8DD;
+  --color-pine: #1E88E5; /* Medium Blue */
+  --color-pine-dark: #0A1C26; /* Very Dark Navy */
+  --color-pine-light: #44B1DF;
+  --color-marigold: #1E88E5; /* Re-map marigold to blue for buttons temporarily */
+  --color-marigold-dark: #1565C0;
+  --color-clay: #C97A3D;
+  --color-charcoal: #1F2937;
+  --color-sage: #E0F7FA; /* Light Cyan */
+  --color-sage-dark: #B2EBF2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background-color: var(--color-marigold);
+  color: var(--color-pine-dark);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* focus visibility for accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--color-marigold);
+  outline-offset: 2px;
+}
+
+.input-field {
+  width: 100%;
+  border: 1px solid rgba(43, 43, 40, 0.15);
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  font-size: 15px;
+  background-color: white;
+  color: var(--color-charcoal);
+  transition: border-color 0.15s ease;
+}
+.input-field:focus {
+  border-color: var(--color-pine);
+  outline: none;
+}
