@@ -27,16 +27,16 @@ export default function Services() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map(({ icon: Icon, title, desc }) => (
-            <div
+            <article
               key={title}
               className="rounded-2xl bg-white border border-charcoal/[0.06] p-6 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
             >
-              <span className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-sage mb-4">
+              <span className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-sage mb-4" aria-hidden="true">
                 <Icon size={21} className="text-pine-dark" />
               </span>
               <h3 className="font-display font-semibold text-lg text-pine-dark mb-1.5">{title}</h3>
               <p className="text-[15px] text-charcoal/65 leading-relaxed">{desc}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

@@ -31,10 +31,10 @@ export default function Testimonials() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map((r) => (
-            <div key={r.name} className="rounded-2xl bg-white border border-charcoal/[0.06] p-7">
+            <article key={r.name} className="rounded-2xl bg-white border border-charcoal/[0.06] p-7">
               <div className="flex gap-1 mb-4" aria-label="5 out of 5 stars">
                 {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={16} className="fill-marigold text-marigold" />
+                  <Star key={i} size={16} className="fill-marigold text-marigold" aria-hidden="true" />
                 ))}
               </div>
               <p className="text-[15px] text-charcoal/75 leading-relaxed mb-5">"{r.text}"</p>
@@ -42,7 +42,7 @@ export default function Testimonials() {
                 <p className="font-semibold text-pine-dark text-sm">{r.name}</p>
                 <p className="text-sm text-charcoal/55">{r.relation}</p>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

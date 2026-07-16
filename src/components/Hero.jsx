@@ -68,6 +68,9 @@ export default function Hero() {
             <img
               src="/hero-caregiver.png"
               alt="A caregiver gently holding the hands of a smiling elderly woman at home"
+              width="400"
+              height="500"
+              fetchpriority="high"
               className="w-full h-full object-cover"
             />
           </div>

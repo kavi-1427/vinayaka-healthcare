@@ -46,7 +46,14 @@ export default function Caregivers() {
           {caregivers.map((c) => (
             <div key={c.name} className="bg-white rounded-2xl overflow-hidden border border-charcoal/[0.06] hover:shadow-md transition-shadow">
               <div className="aspect-[4/3] overflow-hidden">
-                <img src={c.img} alt={`${c.name}, caregiver`} className="w-full h-full object-cover" />
+                <img
+                  src={c.img}
+                  alt={`${c.name}, caregiver`}
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-1.5 mb-1">

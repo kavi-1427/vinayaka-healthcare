@@ -1,0 +1,21 @@
+{
+  "name": "Vinayaka Healthcare | Home Healthcare, Nursing & Elderly Care Services",
+  "short_name": "Vinayaka Healthcare",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF9F2",
+  "theme_color": "#49885C",
+  "description": "Vinayaka Healthcare provides compassionate, reliable home healthcare, nursing, and elderly care services with trained and background-verified caregivers.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

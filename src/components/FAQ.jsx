@@ -46,6 +46,7 @@ export default function FAQ() {
                   onClick={() => setOpenIndex(isOpen ? -1 : i)}
                   className="w-full flex items-center justify-between gap-4 text-left px-5 sm:px-6 py-4.5 py-4"
                   aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${i}`}
                 >
                   <span className="font-semibold text-pine-dark text-[15px] sm:text-base">{f.q}</span>
                   <ChevronDown
@@ -54,7 +55,7 @@ export default function FAQ() {
                   />
                 </button>
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-5 text-charcoal/65 text-[15px] leading-relaxed">
+                  <div id={`faq-answer-${i}`} className="px-5 sm:px-6 pb-5 text-charcoal/65 text-[15px] leading-relaxed">
                     {f.a}
                   </div>
                 )}
