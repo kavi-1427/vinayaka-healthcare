@@ -52,7 +52,7 @@ export default function StatsBar() {
   }, []);
 
   return (
-    <section ref={ref} className="bg-pine py-16 sm:py-20">
+    <section ref={ref} className="bg-pine py-16 sm:py-20" aria-label="Vinayaka Healthcare key statistics">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((s) => (
           <Stat key={s.label} {...s} active={active} />

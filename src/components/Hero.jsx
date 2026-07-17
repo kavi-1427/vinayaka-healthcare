@@ -26,8 +26,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-lg text-charcoal/75 max-w-lg leading-relaxed">
-            We send trained, background-verified caregivers to live with and look after your elderly
-            parents — for a few hours a day, or day and night. You stay close. We handle the care.
+            We offer professional <strong>home healthcare</strong> and <strong>home nursing</strong> services.
+            We send trained, background-verified caregivers to live with and look after your parents, providing
+            compassionate <strong>patient care</strong>, comprehensive <strong>elderly care</strong>, and reliable <strong>24/7 home care</strong> through
+            our trusted <strong>caregiver services</strong>.
           </p>
 
           <div className="mt-9 flex flex-col sm:flex-row gap-4">

@@ -1,17 +1,17 @@
 const serviceLinks = [
-  "24/7 Live-in Care", "Hourly Care", "Personal Care", "Dementia Care", "Post-Surgery Recovery",
+  "24/7 Live-in Care", "Hourly Care", "Personal Care", "Dementia Care", "Post-Surgery Recovery", "Palliative Care",
 ];
 
 export default function Footer() {
   return (
-    <footer className="bg-pine-dark text-ivory/80 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="bg-pine-dark text-ivory/80 pt-16 pb-8" role="contentinfo">
+      <nav className="max-w-7xl mx-auto px-5 sm:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10" aria-label="Footer navigation">
         <div>
           <div className="flex items-center gap-2.5 mb-4">
             <span className="font-display font-semibold text-ivory text-lg">Vinayaka Healthcare</span>
           </div>
           <p className="text-sm leading-relaxed max-w-xs">
-            Trained, verified caregivers for elderly care at home — serving families all over Tamil Nadu, 24/7.
+            Trained, verified caregivers for elderly care at home — serving families across Tamil Nadu from Hosur, 24/7.
           </p>
         </div>
 
@@ -40,15 +40,14 @@ export default function Footer() {
           <ul className="space-y-2.5 text-sm">
             <li><a href="tel:8050860837" className="hover:text-marigold transition-colors">80508 60837</a></li>
             <li><a href="https://wa.me/918050860837" className="hover:text-marigold transition-colors">WhatsApp</a></li>
-            <li>healthcare@gmail.com</li>
-            <li>Serving all over Tamil Nadu</li>
+            <li>Hosur, Tamil Nadu</li>
           </ul>
         </div>
-      </div>
+      </nav>
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8 mt-12 pt-6 border-t border-ivory/10 flex flex-col sm:flex-row justify-between gap-3 text-sm text-ivory/55">
         <p>© {new Date().getFullYear()} Vinayaka Healthcare. All rights reserved.</p>
-        <p>Verified caregivers · Serving all districts of Tamil Nadu</p>
+        <p>Verified caregivers · Based in Hosur · Serving all districts of Tamil Nadu</p>
       </div>
     </footer>
   );

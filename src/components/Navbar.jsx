@@ -24,7 +24,7 @@ export default function Navbar() {
         scrolled ? "bg-ivory/95 backdrop-blur-sm shadow-[0_1px_0_rgba(43,43,40,0.08)]" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 py-4">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 py-4" aria-label="Main navigation">
         <a href="#top" className="flex items-center gap-2.5">
           <span className="font-display text-pine-dark text-xl font-semibold tracking-tight">
             Vinayaka Healthcare

@@ -21,7 +21,7 @@ export default function Services() {
         <div className="max-w-xl mb-14">
           <p className="text-sm font-semibold text-marigold-dark tracking-wide uppercase mb-3">What we offer</p>
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-pine-dark tracking-tight">
-            Care built around how your family actually lives
+            Home medical assistance built around how your family actually lives
           </h2>
         </div>
 

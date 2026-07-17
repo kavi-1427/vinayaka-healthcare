@@ -48,7 +48,7 @@ export default function Caregivers() {
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={c.img}
-                  alt={`${c.name}, caregiver`}
+                  alt={`${c.name} — ${c.specialty} caregiver at Vinayaka Healthcare`}
                   width="400"
                   height="300"
                   loading="lazy"

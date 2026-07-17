@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react";
+import { Phone, MapPin, MessageCircle, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -41,19 +41,15 @@ export default function Contact() {
               </div>
             </a>
 
-            <a
-              href="mailto:healthcare@gmail.com"
-              className="flex items-center gap-4 group"
-              aria-label="Email Vinayaka Healthcare at healthcare@gmail.com"
-            >
-              <span className="w-12 h-12 rounded-full bg-sage flex items-center justify-center group-hover:bg-sage-dark transition-colors shrink-0">
-                <Mail size={20} className="text-pine-dark" />
+            <div className="flex items-center gap-4">
+              <span className="w-12 h-12 rounded-full bg-sage flex items-center justify-center shrink-0">
+                <MapPin size={20} className="text-pine-dark" />
               </span>
               <div>
-                <p className="text-sm font-semibold text-charcoal/60 uppercase tracking-wide">Email</p>
-                <p className="font-semibold text-pine-dark text-lg group-hover:underline">healthcare@gmail.com</p>
+                <p className="text-sm font-semibold text-charcoal/60 uppercase tracking-wide">Location</p>
+                <p className="font-semibold text-pine-dark text-lg">Hosur, Tamil Nadu</p>
               </div>
-            </a>
+            </div>
 
             <div className="flex items-center gap-4">
               <span className="w-12 h-12 rounded-full bg-sage flex items-center justify-center shrink-0">
@@ -64,16 +60,6 @@ export default function Contact() {
                 <p className="font-semibold text-pine-dark text-lg">24/7 Hours Available</p>
               </div>
             </div>
-
-            <div className="flex items-center gap-4">
-              <span className="w-12 h-12 rounded-full bg-sage flex items-center justify-center shrink-0">
-                <MapPin size={20} className="text-pine-dark" />
-              </span>
-              <div>
-                <p className="text-sm font-semibold text-charcoal/60 uppercase tracking-wide">Office Address</p>
-                <p className="font-semibold text-pine-dark text-lg">12, Main Road, T. Nagar, Chennai, Tamil Nadu - 600017</p>
-              </div>
-            </div>
           </div>
 
           <p className="mt-8 text-sm text-charcoal/55 bg-sage/40 rounded-xl px-5 py-4">
@@ -81,29 +67,11 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-6">
-          <div className="rounded-2xl p-6 border border-charcoal/[0.06] bg-white flex items-center gap-4">
-            <span className="w-12 h-12 rounded-full bg-sage flex items-center justify-center shrink-0">
-              <MapPin size={22} className="text-pine-dark" />
-            </span>
-            <div>
-              <p className="font-semibold text-pine-dark">Serving families across Tamil Nadu</p>
-              <p className="text-sm text-charcoal/55 mt-0.5">Chennai · Coimbatore · Madurai · Trichy · Salem &amp; beyond</p>
-            </div>
-          </div>
-          
-          <div className="rounded-2xl overflow-hidden border border-charcoal/[0.06] h-[280px] bg-sage/40 relative">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.8523725595603!2d80.23157121175657!3d13.044234013280053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526654279b9cf7%3A0xe54e66d92ec28df7!2sT.%20Nagar%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1721121021481!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Vinayaka Healthcare Office Location Map"
-              className="w-full h-full"
-            />
+        <div className="rounded-2xl overflow-hidden border border-charcoal/[0.06] min-h-[320px] bg-sage/40 flex items-center justify-center">
+          <div className="text-center px-8">
+            <MapPin size={32} className="text-pine mx-auto mb-3" aria-hidden="true" />
+            <p className="font-semibold text-pine-dark">Based in Hosur, serving families across Tamil Nadu</p>
+            <p className="text-sm text-charcoal/55 mt-1">Hosur · Chennai · Coimbatore · Madurai · Trichy · Salem &amp; beyond</p>
           </div>
         </div>
       </div>

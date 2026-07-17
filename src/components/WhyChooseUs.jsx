@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
           {points.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="flex gap-4">
-              <span className="flex-shrink-0 w-11 h-11 rounded-xl bg-pine flex items-center justify-center">
+              <span className="flex-shrink-0 w-11 h-11 rounded-xl bg-pine flex items-center justify-center" aria-hidden="true">
                 <Icon size={20} className="text-marigold" />
               </span>
               <div>

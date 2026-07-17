@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: "Which areas in Tamil Nadu do you serve?",
-    a: "We place caregivers all over Tamil Nadu, across districts including Chennai, Coimbatore, Madurai, Trichy, Salem, and beyond. Tell us your city when you request a caregiver.",
+    a: "We place caregivers all over Tamil Nadu, across districts including Hosur, Chennai, Coimbatore, Madurai, Trichy, Salem, and beyond. Tell us your city when you request a caregiver.",
   },
   {
     q: "Is care available on short notice?",
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Can we choose hourly care instead of full-time?",
-    a: "Yes — we offer hourly, daily, and full-time live-in plans. You can also change plans later if your family's needs change.",
+    a: "Yes — we offer hourly, daily, and full-time live-in plans, as well as palliative care for families who need it. You can also change plans later if your family's needs change.",
   },
 ];
 
